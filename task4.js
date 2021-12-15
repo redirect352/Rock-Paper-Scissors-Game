@@ -21,11 +21,11 @@ function CheckInput(argv)
 {
     if(argv.length < 5 )
     {
-        console.log("Error! Argumets count must be greater than 2.");
+        console.log("\nError! Argumets count must be greater than 2.\nCorrect input example: Rock Paper Scissors\n");
         return false;
     }else if(argv.length % 2 ==0 )
     {
-        console.log("Error! Programm accepts odd number of arguments.");
+        console.log("\nError! Programm accepts odd number of arguments.\nCorrect input example: Rock Paper Scissors\n");
         return false;
     }
     else{
@@ -42,6 +42,8 @@ function CheckInput(argv)
             }
             argv[i]=buf;
         }
+        if(!correctInput)
+            console.log("\nError! Arguments must be unique. \nCorrect input example: Rock Paper Scissors\n");
         return correctInput;
     }
 }
