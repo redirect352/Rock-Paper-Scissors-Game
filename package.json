@@ -2,6 +2,7 @@
 	"name": "task2",
 	"version": "1.0.0",
 	"dependencies": {
+		"readline-sync": "^1.4.10",
 		"sha3": "^2.1.4"
 	}
 }
